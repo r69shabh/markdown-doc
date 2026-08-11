@@ -1,11 +1,25 @@
 {
   "name": "@r69shabhjs/markdown-doc",
-  "version": "0.1.0-alpha.1",
-  "description": "A source-preserving Markdown document model.",
+  "version": "0.1.0-alpha.2",
+  "description": "A source-preserving Markdown document model for TypeScript with mdast AST access and localized text edits.",
+  "keywords": [
+    "markdown",
+    "markdown-parser",
+    "markdown-editor",
+    "markdown-ast",
+    "markdown-document",
+    "lossless-markdown",
+    "source-preserving",
+    "mdast",
+    "commonmark",
+    "typescript",
+    "remark",
+    "syntax-tree"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/r69shabh/markdown-doc.git"
+    "url": "git+https://github.com/r69shabh/markdown-doc.git"
   },
   "bugs": {
     "url": "https://github.com/r69shabh/markdown-doc/issues"
