@@ -1,0 +1,60 @@
+{
+  "name": "@r69shabhjs/markdown-doc",
+  "version": "0.1.0-alpha.1",
+  "description": "A source-preserving Markdown document model.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r69shabh/markdown-doc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r69shabh/markdown-doc/issues"
+  },
+  "homepage": "https://github.com/r69shabh/markdown-doc#readme",
+  "type": "module",
+  "packageManager": "pnpm@10.9.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm typecheck && pnpm test",
+    "test:build": "pnpm build && test -f dist/index.js && test -f dist/index.cjs && test -f dist/index.d.ts",
+    "corpus:import": "node scripts/import-corpus.mjs",
+    "compare:remark": "pnpm build && node scripts/compare-remark.mjs"
+  },
+  "dependencies": {
+    "mdast": "^3.0.0",
+    "mdast-util-frontmatter": "^2.0.0",
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-to-markdown": "^2.0.0",
+    "micromark-extension-frontmatter": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/mdast": "^4.0.0",
+    "@types/unist": "^3.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "unified": "^11.0.0",
+    "vitest": "^3.0.0"
+  }
+}

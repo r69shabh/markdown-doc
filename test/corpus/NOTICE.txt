@@ -1,0 +1,15 @@
+This directory contains fixtures extracted from upstream specification examples.
+CommonMark source: spec.txt
+CommonMark repository: https://github.com/commonmark/commonmark-spec
+CommonMark revision: 3da939428d80f146f270cd1765e4ba462e96bb1b
+CommonMark license: CC-BY-SA 4.0
+GFM source: spec.txt
+GFM repository: https://github.com/github/cmark-gfm
+GFM revision: 499789b49373bfa045d0e7547e5ee63444c77bca
+GFM license: see the upstream repository and specification.
+README sources:
+- 01-markdown-doc-commonmark.md: markdown-doc-commonmark 3da939428d80f146f270cd1765e4ba462e96bb1b https://github.com/commonmark/commonmark-spec
+- 02-markdown-doc-gfm.md: markdown-doc-gfm 499789b49373bfa045d0e7547e5ee63444c77bca https://github.com/github/cmark-gfm
+- 03-markdown-doc-unified.md: markdown-doc-unified ba1af683ba597228b736566752668e7132295d38 https://github.com/unifiedjs/unified
+- 04-markdown-doc-remark.md: markdown-doc-remark 334415d7552f2ffa359a23efc100345e7ed7a9f7 https://github.com/remarkjs/remark
+- 05-markdown-doc-micromark.md: markdown-doc-micromark 774a70c6bae6dd94486d3385dbd9a0f14550b709 https://github.com/micromark/micromark
